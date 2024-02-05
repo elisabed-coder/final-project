@@ -1,0 +1,275 @@
+footer {
+  margin-top: 500px;
+}
+
+.footer-container {
+  margin: auto;
+  background-color: #011a41;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 57px 78px;
+}
+
+.footer-container h2 {
+  color: #ffffff;
+  font-weight: 700px;
+  font-size: 24px;
+}
+
+.footer-container ul {
+  margin-top: 11px;
+  list-style-type: none;
+}
+
+.footer-container a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 24px;
+  transition: all 0.4s ease;
+}
+.footer-container a:hover {
+  padding-left: 10px;
+  color: #355efc;
+}
+
+.footer-container > div {
+  width: 25%;
+}
+
+.footer-container ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-container ul li:not(:first-child) {
+  margin-bottom: 10px;
+}
+
+.footer-logos {
+  margin-top: 10px;
+}
+
+.copyrightText {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 25px 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec-contact p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  width: 282px;
+  margin-top: 11px;
+}
+
+.newsletter-form {
+  width: 262px;
+  position: relative;
+  margin-top: 11px;
+}
+.newsletter-form input {
+  padding: 15px 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+.sign-up-button {
+  font-size: 16px;
+  font-weight: 400;
+  height: 37px;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #355efc;
+  position: absolute;
+  right: 0;
+  border: none;
+  top: calc(50% - 37px / 2);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.sign-up-button:hover {
+  background-color: #011a41;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar .logo {
+    display: block;
+    position: absolute;
+    left: 5%;
+  }
+  .icons {
+    display: inline-flex;
+    position: absolute;
+    right: 5%;
+  }
+  .header-main-content {
+    padding-top: 2%;
+  }
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+  .icons #close-icon {
+    display: none;
+  }
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 10000;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-evenly;
+    padding-top: 2.5rem;
+  }
+
+  .nav-page-section img {
+    display: none;
+  }
+
+  #check:checked ~ nav {
+    display: block;
+    height: 17.7rem;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+    padding: 10%;
+  }
+  .navbar-logos {
+    display: none;
+  }
+  .header-info-bar {
+    display: none;
+  }
+  .main-headers h1 {
+    font-size: 40px;
+  }
+
+  .service-section-first-cmn {
+    flex-wrap: wrap;
+  }
+
+  .service-section img {
+    width: 100%;
+  }
+  .why-choosing-us-section {
+    flex-direction: column;
+  }
+
+  .why-choosing-us-right-side {
+    margin-top: 50px;
+  }
+  .financial-planning-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-experience {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  footer {
+    padding: 20px;
+    width: 100%;
+  }
+  .footer-container > div {
+    width: 50%;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .copyrightText {
+    width: 100%;
+    padding: 25px;
+  }
+  .copyrightText {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  .newsletter-form {
+    width: 200px;
+  }
+  .sec-contact p {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .input-row {
+    margin: auto;
+    width: 80%;
+  }
+  .statistic-section-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .statistic-section-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-profits-column {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service-columns-first,
+  .service-columns-second {
+    border-bottom: 1px solid #909de2;
+    border-right: none;
+  }
+
+  .why-choosing-us-section > div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .why-choosing-us-btn {
+    width: 50%;
+  }
+  .why-choosing-us-section h3,
+  .why-choosing-us-section p,
+  .our-services-wrapper h2 {
+    width: 300px;
+  }
+
+  .input-form-container {
+    width: 350px;
+    left: calc(50% - 360px / 2);
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
